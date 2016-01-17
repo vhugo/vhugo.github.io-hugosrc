@@ -5,20 +5,20 @@
 
 <body lang="{{ .Site.Params.Lang }}">
 
-<div class="section header">
+<section class="header">
     <div class="container">
         <div class="content">
+            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
             <nav>
                 <ul>
                     {{ range .Site.Params.Menu }}<a href="/{{ index . 1 }}/"><li>{{ index . 0 }}</li></a>{{ end }}
                 </ul>
             </nav>
-            <a href="/"><div class="name">{{ .Site.Params.Author }}</div></a>
         </div>
     </div>
-</div>
+</section>
 
-<div class="section icons">
+<section class="icons">
     <div class="container">
         <div class="content">
 
@@ -59,4 +59,4 @@
         {{ end }}
         </div>
     </div>
-</div>
+</section>

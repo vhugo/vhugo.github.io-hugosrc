@@ -1,0 +1,18 @@
+<div class="page-heading">
+{{ if .Params.heading }}
+    {{ .Params.heading }}
+{{ else }}
+    {{if .IsNode}}
+        {{ $titled := lower .Title }}
+        {{range .Site.Params.Menu }}
+            {{ $heading := index . 1 }}
+            {{ $text := index . 0 }}
+            {{ if eq $titled $heading }}
+                {{ $text }}
+            {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ .Title }}
+    {{ end }}
+{{ end }}
+</div>

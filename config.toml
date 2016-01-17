@@ -1,3 +1,31 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "http://vhugo.github.io/"
+builddrafts = false
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Victor Alves"
+title = "Victor Alves"
+pygmentsuseclasses = true
+theme = "cocoa"
+
+[permalinks]
+fixed = ":title/"
+posts = "posts/:slug/"
+
+[params]
+Author = "Victor Alves"
+CacheBuster = true
+DateForm = "Jan 2, 2006"
+DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
+Description = "This is where I share experiments and ideas."
+FaviconFile = "favicon.ico"
+#GATracker = "<Google-Analyics-ID>"
+GitHub = "//github.com/vhugo"
+Initials = "VA" # displayed on single post page
+Lang = "en"
+LinkedIn = "//linkedin.com/in/vhugoalves"
+Twitter = "//twitter.com/vhugoalves"
+disqusShortname = "vhugo"
+Menu = [["Experiments", "posts"], ["Photos", "gallery"], ["About", "about"]]

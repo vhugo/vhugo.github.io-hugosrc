@@ -1,4 +1,4 @@
-baseurl = "http://vhugo.github.io/"
+baseurl = "/"
 builddrafts = false
 canonifyurls = true
 contentdir = "content"

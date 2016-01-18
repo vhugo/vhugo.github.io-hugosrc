@@ -1,9 +1,9 @@
 [submodule "themes/cocoa"]
 	path = themes/cocoa
-	url = https://github.com/nishanths/cocoa-hugo-theme.git
+	url = https://github.com/vhugo/cocoa-hugo-theme.git
 [submodule "public"]
 	path = public
 	url = https://github.com/vhugo/vhugo.github.io.git
 [submodule "content/draft"]
 	path = content/draft
-	url = https://vhalves@bitbucket.org/vhalves/vhugo.github.io-drafts.git
+	url = https://vhugoalves@bitbucket.org/vhugoalves/vhugo.github.io-drafts.git

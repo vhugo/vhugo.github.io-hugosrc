@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+<section class="main">
+	<div class="container">
+		<div class="content">
+			<div class="page-heading">Gallery</div>
+			<ul>
+			{{ range .Site.Data.gallery }}{{ if .cover }}<li class="my-gallery-albums"><a href="{{.album_path}}"><img src="gallery/{{.album}}/{{.thumbnail_filename}}" alt="{{.description}}" /><br />{{.album_name}}</a></li>{{ end }}{{ end }}
+			</ul>
+		</div>
+	</div>
+</section>
+
+{{ partial "footer.html" . }}

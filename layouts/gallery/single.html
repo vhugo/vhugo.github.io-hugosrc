@@ -16,7 +16,7 @@
 			{{ range .Site.Data.gallery }}
 				{{ if eq .album_path $album_path }}
 					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-						<a href="gallery/{{.album}}/{{.medium_filename}}" itemprop="contentUrl" data-size="{{.medium_size}}" data-med="gallery/{{.album}}/{{.small_filename}}" data-med-size="{{.small_size}}">
+						<a href="gallery/{{.album}}/{{.display_filename}}" itemprop="contentUrl" data-size="{{.display_size}}" data-preload="gallery/{{.album}}/{{.preload_filename}}">
 							<img src="gallery/{{.album}}/{{.thumbnail_filename}}" itemprop="thumbnail" alt="{{.description}}" />
 						</a>
 						<figcaption itemprop="caption description">{{.title}}</figcaption>

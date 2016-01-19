@@ -41,17 +41,17 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 			}
 
 
-			var mediumSrc = linkEl.getAttribute('data-med');
-			if(mediumSrc) {
-				size = linkEl.getAttribute('data-med-size').split('x');
-				// "medium-sized" image
+			// Preload photo
+			var preloadSrc = linkEl.getAttribute('data-preload');
+			if(preloadSrc) {
+				size = linkEl.getAttribute('data-size').split('x');
 				item.m = {
-					src: mediumSrc,
+					src: preloadSrc,
 					w: parseInt(size[0], 10),
 					h: parseInt(size[1], 10)
 				};
 			}
-			// original image
+			// display photo
 			item.o = {
 				src: item.src,
 				w: item.w,

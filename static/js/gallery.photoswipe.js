@@ -34,29 +34,16 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 			item.el = el; // save link to element for getThumbBoundsFn
 
 			if(childElements.length > 0) {
-				item.msrc = childElements[0].getAttribute('src'); // thumbnail url
 				if(childElements.length > 1) {
 					item.title = childElements[1].innerHTML; // caption (contents of figure)
 				}
 			}
 
-
 			// Preload photo
 			var preloadSrc = linkEl.getAttribute('data-preload');
 			if(preloadSrc) {
-				size = linkEl.getAttribute('data-size').split('x');
-				item.m = {
-					src: preloadSrc,
-					w: parseInt(size[0], 10),
-					h: parseInt(size[1], 10)
-				};
+				item.msrc = preloadSrc;
 			}
-			// display photo
-			item.o = {
-				src: item.src,
-				w: item.w,
-				h: item.h
-			};
 
 			items.push(item);
 		}

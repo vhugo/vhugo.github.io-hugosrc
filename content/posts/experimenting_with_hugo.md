@@ -1,8 +1,8 @@
 +++
-categories = [ "development"]
 date = "2016-01-16T15:53:26-02:00"
-tags = ["experiment", "hugo"]
 title = "Experimenting with Hugo"
+categories = ["development"]
+tags = ["hugo", "blog"]
 
 +++
 

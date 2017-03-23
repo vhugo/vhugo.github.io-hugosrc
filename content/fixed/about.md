@@ -6,7 +6,17 @@ title = "about"
 +++
 
 # About me
-Senior software developer, husband and a little girl's father. Co-founder of [Substance Project](https://www.substanceproject.com.br/) - a consultancy and software development agency based in Brazil. If you want to know more about my professional background, check my [resume](https://www.dropbox.com/s/4mpbojf4m94oric/resume_victor_2015_EN.pdf?dl=0) or my [Linkedin](//linkedin.com/in/vhugoalves) profile.
+I'm a software developer over 30 years of age with 15 years of experience,
+husband of a really nice gal and father of a lovely and funny little girl.
+I was born in Brazil, but recently living and working in the Netherlands.
+I can speak fluently Portuguese and English. In case you're interesting in my
+professional background, check out my
+[resume](https://www.dropbox.com/s/4mpbojf4m94oric/resume_victor_2015_EN.pdf) or
+my [Linkedin](//linkedin.com/in/vhugoalves) profile.
 
 ## About the site
-This is where I share. This is an idea I had to test other ideas and document as I go. The site was created with [HUGO](http://gohugo.io/), theme is [Cocoa](http://themes.gohugo.io/cocoa/) and for photo albums I used this [little guy](https://github.com/vhugo/hugallery/) I created myself.
+This is a working in progress project, it supposed to a place where I share
+ideas and knowledge I gather from other projects and experiments. It was created
+with [HUGO](http://gohugo.io/) using the [Cocoa](http://themes.gohugo.io/cocoa/)
+theme and for photo albums I use this [humble project](https://github.com/vhugo/hugallery/),
+another on-going project of mine.

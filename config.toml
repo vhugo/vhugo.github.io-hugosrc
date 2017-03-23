@@ -28,4 +28,4 @@ Lang = "en"
 LinkedIn = "//linkedin.com/in/vhugoalves"
 Twitter = "//twitter.com/vhugoalves"
 disqusShortname = "vhugo"
-Menu = [["Experiments", "posts"], ["Photos", "gallery"], ["About", "about"]]
+Menu = [["Posts", "posts"], ["Photos", "gallery"], ["About", "about"]]

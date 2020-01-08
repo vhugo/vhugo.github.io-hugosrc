@@ -1,23 +1,24 @@
 {{ partial "header.html" . }}
-{{ $published := .Data.Pages.ByPublishDate }}
 <section class="main">
     <div class="container">
         <div class="content">
-    {{ range $index, $element := .Site.Params.Menu }}
-        {{ if eq $index 0 }}
+            {{ $pages := .Data.Pages }}
+            {{ range $index, $element := .Site.Params.Menu }}
+            {{ if eq $index 0 }}
             {{ $home_section := index $element 1 }}
             <div class="page-heading">{{ index $element 0 }}</div>
             <ul>
-            {{ range $published }}
+                {{ range $pages }}
                 {{ if eq .Section $home_section }}
-                    {{ partial "li.html" . }}
+                {{ range .Pages.ByLastmod.Reverse }}
+                {{ partial "li.html" . }}
                 {{ end }}
-            {{ end }}
+                {{ end }}
+                {{ end }}
             </ul>
-        {{ end }}
-    {{ end }}
+            {{ end }}
+            {{ end }}
         </div>
     </div>
 </section>
 {{ partial "footer.html" . }}
-

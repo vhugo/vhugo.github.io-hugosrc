@@ -4,6 +4,3 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/vhugo/vhugo.github.io.git
-[submodule "content/draft"]
-	path = content/draft
-	url = https://vhugoalves@bitbucket.org/vhugoalves/vhugo.github.io-drafts.git

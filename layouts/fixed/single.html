@@ -1,12 +1,10 @@
 {{ partial "header.html" . }}
-
-<section class="main post non-narrow zero-top-spacing">
+<section class="main">
     <div class="container">
         <div class="content">
             <div class="front-matter">
                 <div class="title-container">
                     {{ partial "page-heading" . }}
-                    <div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
                 </div>
                 <div class="meta">
                     <div class="date" title="{{ .Date.Format .Site.Params.DateFormFull }}">
@@ -37,15 +35,8 @@
             </div>
             <div class="markdown">
                 {{ .Content }}
-                <br>
-                <p><a href="/posts/">Back to posts</a></p>
-            </div>
-            <br>
-            <div class="disqus">
-                {{ template "_internal/disqus.html" . }}
             </div>
         </div>
     </div>
 </section>
-
 {{ partial "footer.html" . }}
